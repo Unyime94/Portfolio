@@ -1,0 +1,560 @@
+:root {
+    --text-clr: rgb(205, 215, 246);
+    --accent-clr: rgb(114, 255, 219);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: var(--text-clr);
+}
+
+body {
+    background-color: rgb(11, 25, 47);
+    font-family: sans-serif;
+}
+
+.nav-section {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    padding: 1rem 4rem;
+    font-family: "Fira Code", monospace;
+    font-size: calc(8px + 1vmin);
+    background: rgb(rgb(11, 25, 47));
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+}
+
+.nav-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-section img {
+    height: 3.5rem;
+    width: 3.5rem;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    color: var(--text-clr);
+    list-style: none;
+}
+
+ul li {
+    transition: color 0.15s ease-in-out;
+}
+
+.number {
+    color: var(--accent-clr);
+}
+
+ul li:hover {
+    color: var(--accent-clr);
+    cursor: pointer;
+}
+
+ul li a:hover {
+    color: var(--accent-clr);
+}
+
+ul li:not(:last-child) {
+    padding: 1em;
+}
+
+li:nth-child(4) {
+    display: flex;
+    align-items: center;
+    border: 2px solid var(--accent-clr);
+    color: var(--accent-clr);
+    border-radius: 3px;
+    padding: 1em;
+    height: 2.5rem;
+    transition: background-color 0.15s ease-in-out;
+}
+
+li:nth-child(4):hover {
+    background-color: rgba(114, 255, 219, 0.1);
+}
+
+.cta {
+    margin: 2.4rem 0;
+    border-style: none;
+    border: 2px solid var(--accent-clr);
+    cursor: pointer;
+    border-radius: 3px;
+    padding: 1em 1.5em;
+    background-color: rgb(11, 25, 47);
+    color: var(--accent-clr);
+    font-family: "Fira Code", monospace;
+    font-size: 1rem;
+    transition: background-color 0.15s ease-in-out;
+}
+
+.cta:hover {
+    background-color: rgba(114, 255, 219, 0.1);
+}
+
+#intro-section {
+    padding: 4rem calc(17.5rem + 1vmin) 0 calc(17.5rem + 1vmin);
+}
+
+.intro {
+    color: var(--accent-clr);
+    font-family: "Fira Code", monospace;
+    padding-bottom: 1.2em;
+    font-size: calc(8px + 1.5vmin);
+}
+
+.greeting {
+    color: rgb(137, 147, 175);
+}
+
+.name {
+    color: rgb(205, 215, 246);
+    font-size: calc(4rem + 1vmin);
+}
+
+.job-desc {
+    color: rgb(137, 147, 175);
+    font-size: calc(4rem + 1vmin);
+}
+
+.other-desc {
+    color: rgb(137, 147, 175);
+    font-size: 1.2rem;
+    padding: 1.2rem 0 0 0;
+    line-height: 1.8rem;
+    font-weight: 300;
+    max-width: 600px;
+}
+
+.low-opacity {
+    opacity: 0.85;
+    color: var(--accent-clr);
+}
+
+#about-me-section {
+    display: flex;
+    gap: 4.375rem;
+    align-items: center;
+    color: rgb(137, 147, 175);
+    color: rgb(137, 147, 175);
+    font-size: 1.2rem;
+    font-weight: 300;
+    padding: 300px calc(17.5rem + 1vmin) 150px calc(17.5rem + 1vmin);
+    position: relative;
+}
+
+#about-me-section div:first-of-type {
+    max-width: 600px;
+}
+
+#about-me-section img {
+    position: relative;
+    height: 300px;
+    width: 230px;
+    border-radius: 6px;
+}
+
+#about-me-section div:last-of-type::before {
+    content: "";
+    height: 300px;
+    width: 230px;
+    border-radius: 6px;
+    background-color: #11b07e;
+    opacity: 0.4;
+    position: absolute;
+    z-index: 10;
+    transition: opacity 0.6s ease;
+}
+
+#about-me-section div:last-of-type::after {
+    position: absolute;
+    content: "";
+    height: 300px;
+    width: 230px;
+    border: 2px solid var(--accent-clr);
+    border-radius: 6px;
+    transform: translate(-210px, 20px);
+    z-index: -10;
+    transition: transform 0.2s ease;
+}
+
+#about-me-section div:last-of-type:hover::before {
+    opacity: 0;
+}
+
+#about-me-section div:last-of-type:hover::after {
+    transform: translate(-215px, 15px);
+}
+
+.about-me-header {
+    color: rgb(205, 215, 246);
+}
+
+.about-me-para {
+    padding: 2rem 0;
+    line-height: 1.8rem;
+}
+
+#projects-section-container {
+    margin: 0 2rem 0 18%;
+    padding: 150px 0 6rem 0;
+}
+
+#projects-section {
+    color: rgb(137, 147, 175);
+    color: rgb(137, 147, 175);
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+    max-width: 700px;
+}
+
+.projects-header {
+    color: rgb(205, 215, 246);
+}
+
+.grid {
+    display: grid;
+    gap: 8rem;
+    grid-template-columns: 2;
+    margin-top: 2rem;
+}
+
+.grid .each-project a img {
+    position: relative;
+}
+
+.grid .each-project:first-of-type .image-container a::before {
+    content: "";
+    height: 24.63rem;
+    width: 35rem;
+    background-color: #11b07e;
+    opacity: 0.5;
+    position: absolute;
+    z-index: 10;
+    transition: opacity 0.6s ease;
+}
+
+.grid .each-project:nth-child(2) .image-container a::before {
+    content: "";
+    height: 25rem;
+    width: 24.25rem;
+    background-color: #11b07e;
+    opacity: 0.5;
+    position: absolute;
+    z-index: 10;
+    transition: opacity 0.6s ease;
+}
+
+.grid .each-project:nth-child(3) .image-container a::before {
+    content: "";
+    height: 24.35rem;
+    width: 25rem;
+    background-color: #11b07e;
+    opacity: 0.5;
+    position: absolute;
+    z-index: 10;
+    transition: opacity 0.6s ease;
+}
+
+.grid .each-project .image-container a:hover::before {
+    opacity: 0;
+}
+
+.grid .each-project:first-of-type a img {
+    max-height: 25rem;
+    max-width: 35rem;
+}
+
+.grid .each-project:not(:first-of-type) a img {
+    max-height: 25rem;
+    max-width: 25rem;
+}
+
+.section-header-line {
+    /* position: absolute;
+    top: 190px;
+    left: 175px; */
+    /* width: calc(430px + 1vmin); */
+    /* width: 35%;
+    border-bottom: 1.5px solid rgba(255, 255, 255, 0.15); */
+}
+
+.right-margin {
+    margin-right: 0.8rem;
+}
+
+.each-project {
+    display: flex;
+    position: relative;
+}
+
+.project-container {
+    background-color: #112340;
+    padding: 2rem;
+    transition: transform 0.2s linear 0s;
+    width: 21.875rem;
+}
+
+.project-container:hover {
+    transform: translateY(-10px);
+}
+
+.project-container span {
+    display: flex;
+    justify-content: end;
+}
+
+.project-container img {
+    display: flex;
+    align-self: end;
+    filter: invert(60%) sepia(12%) saturate(633%) hue-rotate(187deg) brightness(94%) contrast(89%);
+    transition: filter 0.2s linear 0s;
+}
+
+.project-container img:hover {
+    filter: invert(80%) sepia(61%) saturate(346%) hue-rotate(98deg) brightness(106%) contrast(101%);
+    opacity: 0.8;
+}
+
+.project-container h3 {
+    color: var(--text-clr);
+}
+
+.project-container div {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-around;
+    font-family: "Fira Code", monospace;
+}
+
+.project-container p {
+    margin-top: 1rem;
+    color: rgb(137, 147, 175);
+}
+
+.project-writeup {
+    text-align: right;
+    position: absolute;
+    z-index: 30;
+    left: 350px;
+}
+
+.project-writeup h2 {
+    font-size: 0.9rem;
+    color: var(--accent-clr);
+    margin-bottom: 0.6rem;
+    font-family: "Fira Code", monospace;
+}
+
+.project-writeup>a {
+    font-size: 1.8rem;
+    color: var(--text-clr);
+    font-weight: 600;
+    transition: color 0.2s linear 0s;
+    width: 10px;
+}
+
+.project-writeup a:hover {
+    color: var(--accent-clr);
+}
+
+.paragraph-container {
+    background-color: #112340;
+    padding: 25px;
+    margin-top: 1.25rem;
+    margin-bottom: 1.9375rem;
+    min-width: 550px;
+}
+
+.paragraph-container p {
+    font-size: 1.125rem;
+    line-height: 30px;
+}
+
+.project-writeup .lang-used {
+    display: flex;
+    gap: 15px;
+    font-size: 0.9rem;
+    font-family: "Fira Code", monospace;
+    justify-content: flex-end;
+}
+
+.other-projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 6rem 0;
+    padding-top: 3rem;
+}
+
+.other-projects-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.other-projects h2 {
+    font-size: 1.8rem;
+    color: var(--text-clr);
+    margin: 0 0 0.65rem 0;
+    font-weight: 600;
+}
+
+.other-projects a {
+    font-size: 0.9rem;
+    color: var(--accent-clr);
+    margin-bottom: 0.6rem;
+    font-family: "Fira Code", monospace;
+}
+
+#contact-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 180px;
+}
+
+#contact-section h2 {
+    font-size: 1.2rem;
+    color: var(--accent-clr);
+    margin-bottom: 1.25rem;
+    font-family: "Fira Code", monospace;
+}
+
+#contact-section h3 {
+    font-size: 3.6rem;
+    color: var(--text-clr);
+    font-weight: 600;
+}
+
+#contact-section p {
+    color: rgb(137, 147, 175);
+    font-size: 1.2rem;
+    margin: 1.25rem 0 3.125rem 0;
+    line-height: 1.8rem;
+    font-weight: 300;
+    max-width: 450px;
+    text-align: center;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    font-family: "Fira Code", monospace;
+    color: rgb(137, 147, 175);
+    padding: 1em 0;
+    font-size: calc(6px + 1vmin);
+    cursor: pointer;
+    transition: color 0.15s ease-in-out;
+    margin-top: 11.875rem;
+}
+
+footer:hover {
+    color: var(--accent-clr);
+}
+
+@media screen and (max-width: 80rem) {
+    #intro-section {
+        padding: 4rem calc(9rem + 1vmin) 0 calc(9rem + 1vmin);
+    }
+    #about-me-section {
+        padding: 150px calc(9rem + 1vmin) 100px calc(9rem + 1vmin);
+    }
+}
+
+@media screen and (max-width: 77.4375rem) {
+    .each-project {
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 2rem;
+        position: unset;
+    }
+    .project-writeup {
+        position: unset;
+    }
+    #projects-section-container {
+        margin: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 72.3125rem) {
+    .other-projects-container {
+        flex-direction: column;
+    }
+    .project-container {
+        padding: 2rem 3rem;
+    }
+    footer {
+        margin-top: 5.875rem;
+    }
+}
+
+@media screen and (max-width: 63.75rem) {
+    #intro-section {
+        padding: 4rem calc(9rem + 1vmin) 0 calc(9rem + 1vmin);
+    }
+    .name {
+        font-size: calc(3rem + 1vmin);
+    }
+    .job-desc {
+        font-size: calc(3rem + 1vmin);
+    }
+}
+
+@media screen and (max-width: 59rem) {
+    #about-me-section {
+        flex-direction: column;
+        align-items: center;
+        padding: 16rem 0;
+    }
+}
+
+@media screen and (max-width: 53.8125rem) {
+    #intro-section {
+        padding: 4rem calc(9rem + 1vmin) 0 calc(9rem + 1vmin);
+        /* max-width: 1000px; */
+    }
+    .name {
+        font-size: calc(2.5rem + 1vmin);
+    }
+    .job-desc {
+        font-size: calc(2.5rem + 1vmin);
+    }
+}
+
+@media screen and (max-width: 48.875rem) {
+    html {
+        width: 100vh;
+    }
+    #intro-section {
+        padding: 0 0 0 0;
+        margin-top: 5rem;
+    }
+    .intro-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
