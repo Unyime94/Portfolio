@@ -207,6 +207,10 @@ li:nth-child(4):hover {
     color: rgb(205, 215, 246);
 }
 
+.about-me-header>span {
+    font-family: "Fira Code", monospace;
+}
+
 .about-me-para {
     padding: 2rem 0;
     line-height: 1.8rem;
@@ -227,6 +231,10 @@ li:nth-child(4):hover {
 
 .projects-header {
     color: rgb(205, 215, 246);
+}
+
+.projects-header>span {
+    font-family: "Fira Code", monospace;
 }
 
 .grid {
@@ -309,7 +317,7 @@ li:nth-child(4):hover {
     background-color: #112340;
     padding: 2rem;
     transition: transform 0.2s linear 0s;
-    width: 21.875rem;
+    width: 25rem;
 }
 
 .project-container:hover {
@@ -388,6 +396,15 @@ li:nth-child(4):hover {
     line-height: 30px;
 }
 
+.project-writeup .github-link {
+    padding-top: 0;
+    margin: 0 15px 0 0;
+}
+
+.project-writeup .github-link>a {
+    font-size: 16px;
+}
+
 .project-writeup .lang-used {
     display: flex;
     gap: 15px;
@@ -402,6 +419,7 @@ li:nth-child(4):hover {
     align-items: center;
     margin: 6rem 0;
     padding-top: 3rem;
+    line-height: 1.9rem;
 }
 
 .other-projects-container {
@@ -556,5 +574,98 @@ footer:hover {
         display: flex;
         justify-content: center;
         align-items: center;
+    }
+}
+
+@media screen and (max-width: 31.25rem) {
+    #intro-section {
+        padding: 0;
+        margin: 320px 0;
+    }
+    .intro {
+        font-size: 20px;
+    }
+    .name {
+        font-size: 44px;
+    }
+    .job-desc {
+        font-size: 44px;
+        margin-top: 0.8rem;
+    }
+    .other-desc {
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 2.2rem;
+    }
+    button>a {
+        font-size: 18px;
+    }
+    nav>.nav-container>ul {
+        font-size: 18px;
+    }
+    .about-me-header {
+        font-size: 30px;
+    }
+    .about-me-header>span {
+        font-size: 26px;
+        font-family: "Fira Code", monospace;
+        margin-right: 8px;
+    }
+    .about-me-para {
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 2.2rem;
+    }
+    .projects-header {
+        font-size: 30px;
+    }
+    .projects-header>span {
+        font-size: 26px;
+        font-family: "Fira Code", monospace;
+        margin-right: 8px;
+    }
+    .project-writeup>h2 {
+        font-size: 15px;
+    }
+    .project-writeup .paragraph-container {
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 2.2rem;
+    }
+    .lang-used {
+        font-size: 15px;
+    }
+    .project-writeup .github-link {
+        padding-top: 0;
+        margin: 0 15px 0 0;
+    }
+    .project-writeup .github-link>a {
+        font-size: 15px;
+    }
+    .other-projects>h2 {
+        font-size: 30px;
+    }
+    .other-projects-container .project-container {
+        padding: 30px 46px;
+    }
+    .other-projects>a {
+        font-size: 15px;
+    }
+    .project-container {
+        width: 35rem;
+    }
+    .project-container>h3 {
+        font-size: 30px;
+        line-height: 3rem;
+    }
+    .other-projects-container .project-container>p {
+        font-size: 22px;
+    }
+    #contact-section>p {
+        font-size: 22px;
+        font-weight: 400;
+    }
+    footer {
+        font-size: 0.9rem;
     }
 }
