@@ -597,6 +597,7 @@ footer:hover {
     .intro {
         /* font-size: 1.25rem; */
         font-size: 2.25rem;
+        padding: 0;
     }
     .name {
         /* font-size: 2.75rem; */
@@ -622,36 +623,39 @@ footer:hover {
         font-size: 1.4rem;
     }
     .about-me-header {
-        font-size: 1.875rem;
+        font-size: 2.5rem;
     }
     .about-me-header>span {
-        font-size: 1.625rem;
+        font-size: 2rem;
         font-family: "Fira Code", monospace;
         margin-right: 0.5rem;
     }
     .about-me-para {
         font-weight: 400;
-        font-size: 1.375rem;
-        line-height: 2.2rem;
+        font-size: 1.8rem;
+        line-height: 3rem;
     }
     .projects-header {
-        font-size: 1.875rem;
+        font-size: 2.5rem;
     }
     .projects-header>span {
-        font-size: 1.625rem;
+        font-size: 2rem;
         font-family: "Fira Code", monospace;
         margin-right: 0.5rem;
     }
     .project-writeup>h2 {
-        font-size: 0.9375rem;
+        font-size: 1.2rem;
+    }
+    .project-writeup>a {
+        font-size: 2rem;
     }
     .project-writeup .paragraph-container {
         font-weight: 400;
         font-size: 1.375rem;
         line-height: 2.2rem;
     }
-    .lang-used {
-        font-size: 0.9375rem;
+    .each-project .lang-used {
+        font-size: 1.2rem;
     }
     .project-writeup .github-link {
         padding-top: 0;
@@ -661,13 +665,17 @@ footer:hover {
         font-size: 0.9375rem;
     }
     .other-projects>h2 {
-        font-size: 1.875rem;
+        font-size: 2.5rem;
     }
     .other-projects-container .project-container {
         padding: 1.875rem 2.875rem;
     }
     .other-projects>a {
-        font-size: 0.9375rem;
+        font-size: 1.2rem;
+        margin: 1rem;
+    }
+    .other-projects div>p {
+        font-size: 1.2rem;
     }
     .project-container {
         width: 35rem;
@@ -677,13 +685,14 @@ footer:hover {
         line-height: 3rem;
     }
     .other-projects-container .project-container>p {
-        font-size: 1.375rem;
+        font-size: 1.4rem;
     }
     #contact-section>p {
-        font-size: 1.375rem;
+        font-size: 1.5rem;
+        line-height: 2.1rem;
         font-weight: 400;
     }
     footer {
-        font-size: 0.9rem;
+        font-size: 1.1rem;
     }
 }
